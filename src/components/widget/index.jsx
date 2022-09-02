@@ -1,6 +1,5 @@
 import * as React from "react";
 import './style.css'
-import { closeICon, customerSupportIcon, sendIcon } from '../../assets'
 
 const sampleMessages = [
     {
@@ -70,11 +69,11 @@ const WebWidget = () => {
         <div className={'messaging_widget__app_open'}>
             <div className='messaging_widget__header'>
                 <div className='messaging_widget__header_icon_wrapper'>
-                    <img className='messaging_widget__header_icon' src={customerSupportIcon} alt="support-team" />
+                    <img className='messaging_widget__header_icon' src="https://williamonsare.github.io/web-widget/assets/customer_support_icon.svg" alt="support-team" />
                 </div>
                 <h3 className='messaging_widget__header_title'>Customer Support</h3>
                 <div className='messaging_widget__header_close_btn' onClick={() => setIsWidgetOpen(initial => false)}>
-                    <img className='messaging_widget__header_close_btn_icon' src={closeICon} alt="close widget" />
+                    <img className='messaging_widget__header_close_btn_icon' src="https://williamonsare.github.io/web-widget/assets/close_icon.svg" alt="close widget" />
                 </div>
             </div>
             <div className='messaging_widget__body' ref={postsListRef}>
@@ -92,14 +91,14 @@ const WebWidget = () => {
                     }}></textarea>
                 </div>
                 <div className='messaging_widget__sendbtn' onClick={() => handleResponse(textValue)}>
-                    <img className='messaging_widget__send_icon' src={sendIcon} alt="send message" />
+                    <img className='messaging_widget__send_icon' src="https://williamonsare.github.io/web-widget/assets/send_icon.svg" alt="send message" />
                 </div>
             </div>
         </div>
     ) : (
         <div className='messaging_widget__app' onClick={() => setIsWidgetOpen(initial => true)}>
             <div className='messaging_widget__cta'>
-                <img className='messaging_widget__cta_icon' src={customerSupportIcon} alt="Need Help?" />
+                <img className='messaging_widget__cta_icon' src="https://williamonsare.github.io/web-widget/assets/customer_support_icon.svg" alt="Need Help?" />
             </div>
         </div>
     )}</>;
