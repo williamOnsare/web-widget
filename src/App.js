@@ -1,3 +1,4 @@
+import React from "react";
 import { WebWidget } from "./components";
 
 function App({ domElement }) {
