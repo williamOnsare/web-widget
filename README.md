@@ -1,5 +1,5 @@
 # web-widget
-A react app to demo react widget
+A react app to demo web widget
 
 # Getting Started with Create React App
 
